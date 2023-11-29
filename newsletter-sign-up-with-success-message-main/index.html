@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        color: #f75b5b;
+        margin-top: -15px;
+      }
+
+      .attribution a {
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Sign-up form start -->
+    <section class="signup-container" id="signup-container">
+      <div class="signup-left-container">
+        <div class="signup__title">
+          <h1>Stay updated!</h1>
+        </div>
+        <div class="signup__description">
+          <p>Join 60,000+ product managers receiving monthly updates on:</p>
+
+          <p class="para">
+            <img src="/assets/images/icon-list.svg" alt="" class="icon-list" />
+            <span> Product discovery and building what matters </span>
+          </p>
+          <p class="para">
+            <img
+              src="/assets/images/icon-list.svg"
+              alt=""
+              class="icon-list"
+            /><span>Measuring to ensure updates are a success</span>
+          </p>
+          <p class="para">
+            <img src="/assets/images/icon-list.svg" alt="" class="icon-list" />
+            And much more!
+          </p>
+        </div>
+        <div class="signup__form">
+          <form action="" class="form-flex" id="formInput">
+            <div class="email-block">
+              <label id="emailText">Email address</label>
+              <span class="valide" id="validEmail" style="display: none"
+                >VALID EMAIL REQUIRED</span
+              >
+            </div>
+            <div class="signup__form--input">
+              <input
+                type="email"
+                placeholder=" email@company.com "
+                id="email"
+              />
+              <button type="button" id="subscribe">
+                Subscribe to monthly newsletter
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="signup-right-container">
+        <div class="signup__image">
+          <img
+            src="/assets/images/illustration-sign-up-desktop.svg"
+            alt=""
+            class="desktop-image"
+          />
+          <img
+            src="/assets/images/illustration-sign-up-mobile.svg"
+            alt=""
+            class="mobile-image"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Sign-up form end -->
+
+    <!-- Success message start -->
+    <section style="display: none" class="success-message" id="success-page">
+      <div class="success-message__container">
+        <div class="success-message__image">
+          <img src="/assets/images/icon-success.svg" alt="" />
+        </div>
+        <div class="success-message__title">
+          <h1>Thanks for subscribing!</h1>
+        </div>
+        <div class="success-message__description">
+          <p>
+            A confirmation email has been sent to <br />
+            <span
+              class="email"
+              style="font-weight: bolder"
+              id="generated-email"
+            >
+            </span>
+            Please open it and click the button inside to confirm your
+            subscription
+          </p>
+        </div>
+        <button type="button" id="dismiss-btn">
+          <a href="index.html"></a>Dismiss message
+        </button>
+      </div>
+    </section>
+
+    <!-- Success message end -->
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">OLA</a>.
+    </div>
+    <script src="/js/script.js"></script>
+  </body>
+</html>
